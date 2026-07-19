@@ -1,16 +1,63 @@
 :root {
-  --color-primary: #475467;
-  --color-accent: #839b8f;
+  /* ========================================
+     COLORS
+  ======================================== */
 
-  --color-text: #101828;
-  --color-secondary: #667085;
+  --color-primary: #101828;
+  --color-secondary: #475467;
+  --color-text-muted: #6c717b;
+
+  --color-accent: #829b91;
+  --color-accent-hover: #6d7b75;
 
   --color-background: #ffffff;
   --color-surface: #f7f7f7;
+  --color-badge: #f2f4f7;
 
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
+  --color-border: #dadde1;
 
-  --transition: 250ms ease;
+  --color-error: #e44848;
+  --color-error-background: #ffdfdf;
+  --color-rating: #ffc531;
+
+  /* ========================================
+     TYPOGRAPHY
+  ======================================== */
+
+  --font-family: "Inter", sans-serif;
+  --second-family: "Manrope", sans-serif;
+
+  --font-size-h1: 48px;
+  --font-size-h2: 24px;
+  --font-size-body: 16px;
+
+  --line-height-h1: 0.67;
+  --line-height-h2: 1.33;
+  --line-height-body: 1.5;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* ========================================
+     BORDER RADIUS
+  ======================================== */
+
+  --radius-input: 12px;
+  --radius-card: 16px;
+  --radius-filters: 20px;
+  --radius-badge: 100px;
+  --radius-button: 200px;
+
+  /* ========================================
+     TRANSITIONS
+  ======================================== */
+
+  --transition-base: 250ms ease-in-out;
+
+  /* ========================================
+     LAYOUT
+  ======================================== */
+
+  --container-max-width: 1312px;
 }
