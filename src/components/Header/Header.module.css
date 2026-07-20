@@ -59,13 +59,17 @@
 }
 
 @media screen and (max-width: 767px) {
-  .inner {
-    display: flex;
-    justify-content: space-between;
+  .header {
     padding-inline: 16px;
+  }
+  
+  .inner {
+    grid-template-columns: auto 1fr;
+    gap: 24px;
   }
 
   .navigation {
     gap: 16px;
+    justify-self: end;
   }
 }

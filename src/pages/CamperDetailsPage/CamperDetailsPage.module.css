@@ -1,0 +1,141 @@
+.page {
+  padding-block: 48px 80px;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary,
+.detailsCard {
+  padding: 24px;
+
+  background-color: var(--color-surface);
+  border-radius: var(--radius-card);
+}
+
+.detailsCard .sectionTitle {
+  margin: 0;
+}
+
+.title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 8px;
+}
+
+.ratingMeta,
+.location {
+  display: inline-flex;
+  align-items: center;
+}
+
+.ratingMeta {
+  gap: 4px;
+}
+
+.location {
+  gap: 4px;
+}
+
+.ratingIcon {
+  color: var(--color-rating);
+}
+
+.price {
+  margin-top: 24px;
+
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body);
+}
+
+.description {
+  margin-top: 24px;
+
+  color: var(--color-text-secondary);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body);
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 624px)
+    minmax(0, 624px);
+  align-items: start;
+  gap: 48px;
+
+  margin-top: 88px;
+}
+
+.reviewsColumn,
+.bookingColumn {
+  min-width: 0;
+}
+
+.bookingColumn {
+  padding-top: 56px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 1023px) {
+  .bottomSection {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .topSection {
+    grid-template-columns: 1fr;
+  }
+  .bookingColumn {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    padding-block: 24px 48px;
+  }
+
+  .summary,
+  .detailsCard {
+    padding: 16px;
+  }
+
+  .meta {
+    gap: 8px 16px;
+  }
+
+  .bottomSection {
+    margin-top: 32px;
+  }
+}

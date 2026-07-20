@@ -1,0 +1,23 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 48px;
+  padding-inline: 18px;
+
+  font-weight: var(--font-weight-medium);
+
+  background-color: var(--color-badge);
+  mix-blend-mode: multiply;
+  border-radius: 100px;
+}

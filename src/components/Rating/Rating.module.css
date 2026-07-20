@@ -1,0 +1,12 @@
+.ratingStars {
+  display: flex;
+  gap: 4px;
+}
+
+.starActive {
+  color: var(--color-rating);
+}
+
+.starInactive {
+  color: var(--color-border);
+}

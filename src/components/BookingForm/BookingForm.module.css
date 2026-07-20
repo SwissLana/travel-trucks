@@ -1,0 +1,75 @@
+.card {
+  padding: 44px 57px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-body);
+}
+
+.description {
+  margin-top: 8px;
+
+  color: var(--color-text-muted);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+
+  margin-top: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  min-height: 56px;
+  padding-inline: 18px;
+
+  color: var(--color-primary);
+
+  background-color: var(--color-surface);
+  border: 1px solid transparent;
+  border-radius: var(--radius-input);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-secondary);
+}
+
+.inputError {
+  background-color: var(--color-error-background);
+  border-color: var(--color-error);
+}
+
+.error {
+  margin-top: 6px;
+
+  font-size: 14px;
+  color: var(--color-error);
+}
+
+.submitButton {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .formContainer {
+    padding: 24px 16px;
+  }
+  .textarea {
+    min-height: 120px;
+  }
+}
