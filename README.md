@@ -1,6 +1,6 @@
 # TravelTrucks
 
-TravelTrucks is a modern single-page web application for browsing and booking campers. Users can explore available campers, filter them by preferences, save favorites, view detailed information, and submit a booking request through an intuitive interface.
+TravelTrucks is a modern single-page web application for browsing and booking campers. Users can explore available campers, filter them by preferences, view detailed information, and submit a booking request.
 
 > **Current version:** Desktop-first. Responsive layouts for tablet and mobile devices are planned as a future enhancement.
 
@@ -120,7 +120,6 @@ Routing support is enabled through `vercel.json`, allowing direct navigation to 
 /catalog/:id
 ```
 
-
 ## Main Functionality
 
 ### Home
@@ -149,7 +148,6 @@ Each camper includes:
 
 Users can submit a booking request using a validated form.
 
-
 ## Future Improvements
 
 Planned improvements include:
@@ -160,7 +158,6 @@ Planned improvements include:
 - Dark mode
 - Unit and integration tests
 - Internationalization (i18n)
-
 
 ## Author
 
