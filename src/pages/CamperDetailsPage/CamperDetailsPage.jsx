@@ -125,14 +125,13 @@ function CamperDetailsPage() {
             <h2 className={styles.sectionTitle}>Reviews</h2>
 
             {reviews.length > 0 ? (
-              <div className={styles.reviews}>
+              <ul className={styles.reviews}>
                 {reviews.map((review, index) => (
-                  <ReviewCard
-                    key={`${review.reviewer_name}-${index}`}
-                    review={review}
-                  />
+                  <li key={`${review.reviewer_name}-${index}`}>
+                    <ReviewCard review={review} />
+                  </li>
                 ))}
-              </div>
+              </ul>
             ) : (
               <p>This camper has no reviews yet.</p>
             )}
